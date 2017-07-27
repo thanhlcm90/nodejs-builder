@@ -22,7 +22,7 @@ RUN echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiver
 
 # install python 2.7 nodejs, mongodb, redis
 RUN mkdir -p /data/db
-RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 RUN apt-get install -y python2.7 nodejs mongodb-org tcl8.5 redis-server
 
 # install node node-gyp
