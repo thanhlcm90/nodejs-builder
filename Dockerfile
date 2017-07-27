@@ -28,6 +28,9 @@ RUN apt-get install -y python2.7 nodejs mongodb-org tcl8.5 redis-server
 # install node node-gyp
 RUN npm install -g node-gyp
 
+# link python2.7
+RUN ln -s /usr/bin/python2.7 /usr/bin/python
+
 # Start MongoDB & Redis
 CMD mongod --fork -f /etc/mongod.conf \
  && redis-server /etc/redis/redis.conf \
