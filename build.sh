@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-SERVICE=nodejs-app
+SERVICE=nodejs-builder
 MY_ACCOUNT=thanhlcm90
-VERSION=10.13.0
+VERSION=10.23.0
 
 docker rm -f $SERVICE
 docker rmi -f $MY_ACCOUNT/$SERVICE
