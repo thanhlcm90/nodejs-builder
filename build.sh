@@ -2,7 +2,7 @@
 
 SERVICE=nodejs-builder
 MY_ACCOUNT=thanhlcm90
-VERSION=14.17.5
+VERSION=14.18.2
 
 docker rm -f $SERVICE
 docker rmi -f $MY_ACCOUNT/$SERVICE
