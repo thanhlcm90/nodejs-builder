@@ -1,4 +1,4 @@
-ARG VERSION=14.18.2
+ARG VERSION=18.16.0
 FROM  node:$VERSION-alpine
 LABEL maintainer="Daniel Le <thanhlcm90@gmail.com>"
 
@@ -11,8 +11,5 @@ RUN apk add --update alpine-sdk && apk --no-cache add \
     python3 \
     build-base \
     git
-
-# Update latest npm
-RUN npm install -g npm@7.20.1
 
 RUN chown -R node:node /usr/local
