@@ -1,4 +1,4 @@
-ARG VERSION=18.16.0
+ARG VERSION=22.11.0
 FROM  node:$VERSION-alpine
 LABEL maintainer="Daniel Le <thanhlcm90@gmail.com>"
 
